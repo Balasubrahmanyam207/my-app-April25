@@ -1,0 +1,13 @@
+.box{
+    width: 50%;
+    height: 70%;
+    background-color: white;
+    text-align: center;
+    margin: 20%;
+    
+}
+.s{display: flex;
+gap: 2%;
+justify-content: center;
+
+}

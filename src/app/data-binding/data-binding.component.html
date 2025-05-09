@@ -1,0 +1,37 @@
+<h1>Data-binding</h1>
+<!-- event binding -->
+
+<button (click)="greet()">Greet</button>
+
+<input type="text" (keyup)="typing()" >
+
+<select (change)="state()">
+    <option>Telangana</option>
+    <option value="">Andhra pradesh</option>
+    <option value="">Karnataka</option>
+    <option value="">Tamilnadu</option>
+
+</select><br>
+
+<!-- interpolation -->
+
+<h3>{{message}}</h3>
+
+<!-- property binding -->
+ <input type="text" [disabled]="isDisabled">
+ <input type="text" [value]="name"><br>
+
+ <!-- tow way data binding -->
+
+ <input type="text" [(ngModel)]="mobile"><br>
+ <button (click)="submit()">Submit</button>
+
+
+ <h2>Calculator</h2>
+
+    <label for="">Num1:</label>
+    <input type="number"[(ngModel)]="num1"><br>
+    <label for="">Num2:</label>
+    <input type="number" [(ngModel)]="num2"><br>
+    <button (click)="calculate()" [disabled]="(num1==0)||(num2==0)">calculate</button>
+   <h2>Result:{{sum}}</h2>

@@ -1,0 +1,28 @@
+.box{
+    width: 50%;
+    height: 70%;
+    background-color: white;
+    text-align: left;
+    margin: 5%;
+
+    
+}
+.s{display:flex;
+gap: 2%;
+justify-content: center;
+
+
+}
+.Area {
+    background-color: blue;
+    width: 80%;
+    height: 10%;
+    margin: 5% 10px;
+}
+.div-class {
+    margin: 10px;
+}
+
+.div-button{
+    margin: 10px;
+}
