@@ -22,6 +22,7 @@ products: any[]=[
 
 
 ]
+today: any = new Date();
 
 
 }

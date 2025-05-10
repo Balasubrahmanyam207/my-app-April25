@@ -11,6 +11,7 @@ import { RegtangleComponent } from './regtangle/regtangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { EmployeesComponent } from './employees/employees.component';
 
 
 const routes: Routes = [
@@ -25,8 +26,10 @@ const routes: Routes = [
     {path:'circle',component:CircleComponent},
     {path:'BMI',component:BMIComponent},
     {path:'directives',component:DirectivesComponent},
+    {path:'employees',component:EmployeesComponent},
   ]},
   {path:'**',component:ErrorComponent}
+
 ];
 
 @NgModule({

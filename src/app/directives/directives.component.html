@@ -22,7 +22,7 @@
     </thead>
     <tbody>
         <tr *ngFor="let product of products">
-            <td>{{product.name}}</td>
+            <td>{{product.name | lowercase}}</td>
             <td [ngStyle]="{'color':product.price<=2000?'green':'red'}">{{product.price}}</td>
             <td [ngClass]="{'green':product.rating>3.5,'pink':((product.rating>2.5)&&(product.rating<=3.5)),'red':(product.rating<=2.5)}">{{product.rating}}</td>
 
@@ -32,3 +32,12 @@
 
 <h2 *ngIf="false">Hello Everyone</h2>
 <h2 *ngIf="true">Welcome to Lohit IT </h2>
+
+
+
+<h4>{{today}}</h4>
+<h4>{{today | date}}</h4>
+<h4>{{today | date:'dd-mm-yyyy'}}</h4>
+<h4>{{today | date:'yyyy-mm-dd'}}</h4>
+<h4>{{today | date:'hh-mm'}}</h4>
+<h4>{{today | date:'hh:mm:ss'}}</h4>
