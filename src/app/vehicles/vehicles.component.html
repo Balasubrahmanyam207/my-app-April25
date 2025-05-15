@@ -1,0 +1,44 @@
+<h1>Vehicles data list:</h1>
+<input type="text" [(ngModel)]="Keywords" (keyup)="search()" placeholder="balu bad boy">
+<select [(ngModel)]="limit">
+    <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="30">30</option>
+    <option value="40"></option>
+</select>
+
+<select [(ngModel)]="page">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+</select><br>
+
+<button (click)="Pagination()">pagination</button>
+<button routerLink="/dashboard/createvehicle">create</button>
+
+<table  class="table">
+    <thead>
+        <tr class="table-dark">
+            <th>Vehicle</th>
+            <th>Manufacture</th>
+            <th>Model</th>
+            <th>Types</th>
+            <th>Fuel</th>
+            <th>Actions</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of vehicles;let i=index" class="table-secondary">
+                
+                <td>{{a.Vehicle}}</td>
+                <td>{{a.manufacturer}}</td>
+                <td>{{a.model}}</td>
+                <td>{{a.type}}</td>
+                <td>{{a.fuel}}</td>
+                <td><button (click)="delete(a.id)" class="btn  btn-danger">Delete</button></td>
+            </tr>
+        </tbody>
+    
+</table>

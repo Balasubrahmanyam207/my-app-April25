@@ -1,0 +1,64 @@
+<div class="parent">
+    <div class="top ">
+        <input type="text">
+        <label for="">column : </label>
+        <select name="" id="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        <label for="">Order</label>
+          <select name="" id="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        <button class="btn btn-success">Sort</button>
+           <label for="">Limit</label>
+          <select name="" id="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+           <label for="">Page</label>
+          <select name="" id="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        <button class="btn btn-primary">Page</button>
+
+    </div>
+    <div class="bottom m-2" >
+        <div class="child m-2" *ngFor="let a of students">
+          <div class="t1"><img src="{{a.school_logo}}" height="20px" width="20px">&nbsp; {{a.school_name}} &nbsp;{{a.school_city}}</div>
+            <div class="m">
+                <div class="data">
+                    <p>Name : {{a.name}}</p>
+                  <p> Phone : {{a.phone}}</p> 
+                    <p>City :{{a.city}}</p>
+                    <p>DOB :  {{a.dob}}</p> 
+                    <p>Email : {{a.email}}</p>
+                    
+                </div>
+                <div class="photo"><img src="{{a.profile_picture}}" height="100%" width="100%"></div>
+            </div>
+            <div class="t2">
+                <button class="btn btn-warning">View</button>
+                <button class="btn btn-primary">Edit</button>
+                <button class="btn btn-danger">Delete</button>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>

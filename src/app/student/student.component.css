@@ -1,0 +1,45 @@
+.parent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4%;
+}
+
+.top{height: 10%;
+width: 90%;
+border-radius: 20px;
+background-color: rgb(23, 26, 25);}
+
+.bottom{height: 90%;
+width: 80%;
+background-color: antiquewhite;
+display: flex;
+flex-wrap: wrap;
+gap: 3%;
+overflow: auto;}
+
+.child{height: 45%;
+width: 45%;
+background-color:rgb(198, 224, 145)
+
+}
+
+.t1{height: 10%;
+width: 100%;
+background-color: rgb(230, 217, 217);
+text-align: center;}
+.m{height: 76%;
+width: 100%;
+background-color: beige;
+display: flex;}
+.t2{height: 14%;
+width: 100%;
+display: flex;
+justify-content: space-around;}
+.data{height: 100%;
+width: 60%;
+background-color: rgb(210, 178, 240);}
+.photo{height: 100%;
+width: 40%;}

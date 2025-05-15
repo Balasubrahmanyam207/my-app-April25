@@ -12,6 +12,11 @@ import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { WeatherComponent } from './weather/weather.component';
+import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
+import { EMailComponent } from './e-mail/e-mail.component';
+import { StudentComponent } from './student/student.component';
 
 
 const routes: Routes = [
@@ -27,6 +32,11 @@ const routes: Routes = [
     {path:'BMI',component:BMIComponent},
     {path:'directives',component:DirectivesComponent},
     {path:'employees',component:EmployeesComponent},
+    {path:'vehicles', component:VehiclesComponent},
+    {path:'weather', component:WeatherComponent},
+    {path:'createvehicle',component:CreatevehicleComponent},
+    {path:'e-mail', component:EMailComponent},
+    {path:'student',component:StudentComponent}
   ]},
   {path:'**',component:ErrorComponent}
 

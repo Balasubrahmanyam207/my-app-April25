@@ -13,10 +13,17 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { RegtangleComponent } from './regtangle/regtangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { DeveloperComponent } from './developer/developer.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import {HttpClientModule} from '@angular/common/http';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { WeatherComponent } from './weather/weather.component';
+import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
+import { EMailComponent } from './e-mail/e-mail.component';
+import { StudentComponent } from './student/student.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +40,20 @@ import { DeveloperComponent } from './developer/developer.component';
     BMIComponent,
     DirectivesComponent,
     EmployeesComponent,
-    DeveloperComponent
+    DeveloperComponent,
+    VehiclesComponent,
+    FlipkartComponent,
+    WeatherComponent,
+    CreatevehicleComponent,
+    EMailComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
