@@ -17,6 +17,9 @@ import { WeatherComponent } from './weather/weather.component';
 import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
 import { EMailComponent } from './e-mail/e-mail.component';
 import { StudentComponent } from './student/student.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { MarksComponent } from './marks/marks.component';
+
 
 
 const routes: Routes = [
@@ -36,7 +39,9 @@ const routes: Routes = [
     {path:'weather', component:WeatherComponent},
     {path:'createvehicle',component:CreatevehicleComponent},
     {path:'e-mail', component:EMailComponent},
-    {path:'student',component:StudentComponent}
+    {path:'student',component:StudentComponent},
+    {path:'create-user',component:CreateUserComponent},
+    {path:'marks',component:MarksComponent}
   ]},
   {path:'**',component:ErrorComponent}
 
