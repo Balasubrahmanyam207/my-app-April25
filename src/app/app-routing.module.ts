@@ -19,13 +19,14 @@ import { EMailComponent } from './e-mail/e-mail.component';
 import { StudentComponent } from './student/student.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { MarksComponent } from './marks/marks.component';
+import { AuthenticationGuard } from './authentication.guard';
 
 
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
   
-  {path:'dashboard',component:DashboardComponent,children:[
+  {path:'dashboard',component:DashboardComponent, canActivate:[AuthenticationGuard],children:[
     {path:'home',component:HomeComponent},
     {path:'welcome',component:WelcomeComponent},
     {path:'data-binding',component:DataBindingComponent},
